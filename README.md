@@ -7,12 +7,16 @@
 ![Motor](https://img.shields.io/badge/Motor-1000W_BLDC-red)
 ![Vehicle](https://img.shields.io/badge/Prototype-Bajaj_CT100-purple)
 
-> **ME420 – Final Year Individual Research Project** | BSc (Hons) Mechanical Engineering | University of Peradeniya  
+> **ME420 – Final Year Individual Research Project** | BSc (Hons) Mechanical Engineering | University of Peradeniya
 > In collaboration with **Ceylon Electricity Board (CEB)**
+
+---
 
 ## 📌 Problem Statement
 
 Sri Lanka faces rising fuel costs, increased emissions, and limited affordable green mobility options. Motorcycles dominate the personal transport sector, making them ideal candidates for low-cost EV conversion. This project explores converting the widely-used **Bajaj CT100** from ICE to electric propulsion, balancing **cost, weight, and energy efficiency** for the Sri Lankan market.
+
+---
 
 ## 🎯 Objectives
 
@@ -23,30 +27,35 @@ Sri Lanka faces rising fuel costs, increased emissions, and limited affordable g
 - Deliver a validated techno-economic model proving financial viability
 - Explore an innovative plug-in hybrid concept
 
+---
+
 ## 🔧 System Architecture
+
+```
 ┌─────────────────────────────────────────────────────┐
-│ EV CONVERSION SYSTEM (48V) │
+│            EV CONVERSION SYSTEM (48V)                │
 ├─────────────────────────────────────────────────────┤
-│ │
-│ ┌──────────┐ ┌──────────────┐ ┌────────────┐ │
-│ │ Battery │───▶│ Motor │───▶│ Rear Wheel │ │
-│ │ Pack │ │ Controller │ │ (Hub Motor)│ │
-│ │(48V,40Ah)│ │ (1000W) │ │ 1000W │ │
-│ └──────────┘ └──────────────┘ └────────────┘ │
-│ │ │ │
-│ ▼ ▼ │
-│ ┌──────────┐ ┌──────────────┐ ┌────────────┐ │
-│ │ BMS │ │ 3-Speed │ │ Dashboard │ │
-│ │ │ │ Throttle │ │ (OLED) │ │
-│ └──────────┘ └──────────────┘ └────────────┘ │
-│ │ │
-│ ▼ │
-│ ┌──────────┐ ┌──────────────┐ │
-│ │ DC-DC │ │ Mobile App │ │
-│ │ Converter│ │ (Bluetooth) │ │
-│ │(48V→12V) │ │ │ │
-│ └──────────┘ └──────────────┘ │
+│                                                      │
+│  ┌──────────┐    ┌──────────────┐    ┌────────────┐ │
+│  │ Battery  │───▶│    Motor     │───▶│ Rear Wheel │ │
+│  │  Pack    │    │  Controller  │    │ (Hub Motor)│ │
+│  │(48V,40Ah)│    │  (1000W)     │    │  1000W     │ │
+│  └──────────┘    └──────────────┘    └────────────┘ │
+│       │                │                             │
+│       ▼                ▼                             │
+│  ┌──────────┐    ┌──────────────┐    ┌────────────┐ │
+│  │   BMS    │    │  3-Speed     │    │  Dashboard │ │
+│  │          │    │  Throttle    │    │  (OLED)    │ │
+│  └──────────┘    └──────────────┘    └────────────┘ │
+│       │                                              │
+│       ▼                                              │
+│  ┌──────────┐    ┌──────────────┐                   │
+│  │  DC-DC   │    │  Mobile App  │                   │
+│  │ Converter│    │ (Bluetooth)  │                   │
+│  │(48V→12V) │    │              │                   │
+│  └──────────┘    └──────────────┘                   │
 └─────────────────────────────────────────────────────┘
+```
 
 ---
 
@@ -262,9 +271,8 @@ A custom dashboard was developed using **Arduino Nano + 0.96" OLED Display (I2C)
 
 ## 📱 Mobile Application Interface
 
-A companion mobile app was developed using **MIT App Inventor** with Bluetooth connectivity:
+A companion mobile app developed using **MIT App Inventor** with Bluetooth connectivity:
 
-### App Screens
 | Screen | Features |
 |--------|----------|
 | **Dashboard** | Battery %, Speed, Temperature, Mode, Alarms |
@@ -278,30 +286,25 @@ A companion mobile app was developed using **MIT App Inventor** with Bluetooth c
 
 An innovative concept exploring a **dual-mode motorcycle**:
 
-- ⚡ **Electric Mode:** BLDC hub motor for city commuting
-- ⛽ **Petrol Mode:** Original ICE engine for long-distance travel
-- 🔄 **Switching:** Relay or clutch-based mechanical control
+- ⚡ **Electric Mode** — BLDC hub motor for city commuting
+- ⛽ **Petrol Mode** — Original ICE engine for long-distance travel
+- 🔄 **Switching** — Relay or clutch-based mechanical control
 
-### Benefits
-- Eliminates range anxiety
-- Smooth transition for hesitant riders
-- Best of both worlds: low cost + long range
-
-> ⚠️ Currently in **conceptual and design phase** — requires further R&D on throttle synchronization, load balancing, and safety switching logic.
+> ⚠️ Currently in **conceptual and design phase**
 
 ---
 
-## 🧪 Prototype Testing (Without Battery)
+## 🧪 Prototype Testing Results (Without Battery)
 
-Testing was performed using a **48V DC lab power supply** (BK Precision PVS60085MR):
+Testing performed using a **48V DC lab power supply**:
 
-| Test Parameter | Result |
-|----------------|--------|
-| Motor spin-up | ✅ Smooth, quick throttle response |
-| Display meter | ✅ Functional — reads voltage and speed |
-| Controller heating | ✅ Within safe limits |
-| Reverse throttle | ✅ Working as expected |
-| RPM measurement | ✅ Verified using Yokogawa Echometer |
+| Test Parameter | Observation | Result |
+|----------------|-------------|--------|
+| Motor spin-up | Smooth, quick throttle response | ✅ Pass |
+| Display meter | Functional — reads voltage and speed | ✅ Pass |
+| Controller heating | Within safe limits (ambient temp) | ✅ Pass |
+| Reverse throttle | Working as expected | ✅ Pass |
+| RPM measurement | Verified using Echometer | ✅ Pass |
 
 ---
 
@@ -364,49 +367,50 @@ Testing was performed using a **48V DC lab power supply** (BK Precision PVS60085
 
 ## 📂 Repository Structure
 
+```
 EV-Motorcycle-Conversion-Sri-Lanka/
 │
 ├── README.md
 ├── LICENSE
 │
 ├── docs/
-│ ├── Final_Report.pdf
-│ ├── Cost_Benefit_Analysis.pdf
-│ ├── Vehicle_Specifications.pdf
-│ ├── Force_Calculations.pdf
-│ ├── Power_Range_Weight_Analysis.pdf
-│ ├── Motor_Battery_Selection_Calculations.pdf
-│ └── Project_Budget_Report.pdf
+│   ├── Final_Report.pdf
+│   ├── Cost_Benefit_Analysis.pdf
+│   ├── Vehicle_Specifications.pdf
+│   ├── Force_Calculations.pdf
+│   ├── Power_Range_Weight_Analysis.pdf
+│   ├── Motor_Battery_Selection_Calculations.pdf
+│   └── Project_Budget_Report.pdf
 │
 ├── CAD/
-│ └── SolidWorks/
-│ ├── Motorcycle_Assembly.SLDASM
-│ ├── BLDC_Motor.SLDPRT
-│ ├── Battery_Cell.SLDPRT
-│ ├── Battery_Pack.SLDPRT
-│ └── Drivetrain_Design.SLDPRT
+│   └── SolidWorks/
+│       ├── Motorcycle_Assembly.SLDASM
+│       ├── BLDC_Motor.SLDPRT
+│       ├── Battery_Cell.SLDPRT
+│       ├── Battery_Pack.SLDPRT
+│       └── Drivetrain_Design.SLDPRT
 │
 ├── dashboard/
-│ └── arduino_oled_dashboard/
-│ └── dashboard.ino
+│   └── arduino_oled_dashboard/
+│       └── dashboard.ino
 │
 ├── mobile-app/
-│ └── EV_Dashboard_App.aia
+│   └── EV_Dashboard_App.aia
 │
 ├── analysis/
-│ ├── handwritten_calculations/
-│ └── typed_calculations/
+│   ├── handwritten_calculations/
+│   └── typed_calculations/
 │
 ├── images/
-│ ├── prototype/
-│ ├── cad_renders/
-│ ├── dashboard/
-│ ├── mobile_app/
-│ └── testing/
+│   ├── prototype/
+│   ├── cad_renders/
+│   ├── dashboard/
+│   ├── mobile_app/
+│   └── testing/
 │
 └── survey/
-└── survey_results/
-
+    └── survey_results/
+```
 
 ---
 
@@ -424,10 +428,9 @@ EV-Motorcycle-Conversion-Sri-Lanka/
 ## 🤝 Acknowledgments
 
 - **Supervisor:** Ms. Lekha Bakmeedeniya — Dept. of Mechanical Engineering, UoP
-- **Co-Supervisor:** Eng. Tharanga Wickramarathna — Project Manager, Mannar & Pooneryn Wind Projects, CEB
+- **Co-Supervisor:** Eng. Tharanga Wickramarathna — Project Manager, CEB
 - **Department of Mechanical Engineering**, University of Peradeniya
 - **Ceylon Electricity Board (CEB)** — Industry partner and data support
-- Motorcycle riders, garage technicians, and industry experts who participated in the survey
 - University of Peradeniya — Cash advance funding support
 
 ---
@@ -447,7 +450,7 @@ EV-Motorcycle-Conversion-Sri-Lanka/
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ---
 
