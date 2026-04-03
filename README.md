@@ -320,7 +320,7 @@ Testing performed using a **48V DC lab power supply**:
 | 6 | Mobile app development | ✅ Done |
 | 7 | Partial implementation (no battery) | ✅ Done |
 | 8 | Dashboard simulation | ✅ Done |
-| 9 | Plug-in hybrid research | ✅ Done |
+| 9 | Plug-in hybrid research | 🔄 Partialy done |
 | 10 | Battery purchase | ⏳ Budget limitation |
 | 11 | Final prototype demo | 📅 University Exhibition |
 
