@@ -382,14 +382,6 @@ EV-Motorcycle-Conversion-Sri-Lanka/
 │   ├── Motor_Battery_Selection_Calculations.pdf
 │   └── Project_Budget_Report.pdf
 │
-├── CAD/
-│   └── SolidWorks/
-│       ├── Motorcycle_Assembly.SLDASM
-│       ├── BLDC_Motor.SLDPRT
-│       ├── Battery_Cell.SLDPRT
-│       ├── Battery_Pack.SLDPRT
-│       └── Drivetrain_Design.SLDPRT
-│
 ├── dashboard/
 │   └── arduino_oled_dashboard/
 │       └── dashboard.ino
