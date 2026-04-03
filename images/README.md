@@ -9,27 +9,23 @@ EV motorcycle conversion project.
 
 Photos of the physical prototype including:
 - Motor and controller kit
-- Motor mounting on CT100 frame
-- Sample chassis for conversion
-- RPM testing using Echometer
-- No-load test setup
-- Weight balancing measurement
+- Motor mounting 
+- Prototype model without battery
 
 ## 🖥️ cad_renders/
 
 SolidWorks rendered images including:
 - Full motorcycle prototype render
 - BLDC motor model
-- Li-ion battery cell
-- Battery pack assembly
+- Li-ion battery 
+- Li-ion battery pack
 - Drivetrain design
-- Frame modifications
 
 ## 📊 dashboard/
 
 Dashboard development images including:
-- Wokwi simulation screenshots
-- OLED display showing voltage, speed, temperature
+- Wokwi simulation 
+- Throttle dashboard
 - Dashboard circuit diagram
 
 ## 🔬 testing/
@@ -38,14 +34,17 @@ Lab testing documentation including:
 - DC power supply (BK Precision PVS60085MR)
 - Display reading verification
 - Controller and motor bench test
+- No load test
+- RPM testing using Echometer
 
 ## 📱 mobile_app/
 
 Mobile app development images including:
-- DC power supply (BK Precision PVS60085MR)
-- d
-- o
-- 
+- MIT App Inventor
+- Front page
+- Trip summary
+- Settings
+- Alarm history
 
 ---
 *ME420 | University of Peradeniya | 2025*
