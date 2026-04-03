@@ -384,7 +384,6 @@ EV-Motorcycle-Conversion-Sri-Lanka/
 │
 ├── dashboard/
 │   └── arduino_oled_dashboard/
-│       └── dashboard.ino
 │
 ├── analysis/
 │   ├── handwritten_calculations/
