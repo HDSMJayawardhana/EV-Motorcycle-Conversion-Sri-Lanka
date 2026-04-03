@@ -318,10 +318,10 @@ Testing performed using a **48V DC lab power supply**:
 | 4 | Kit procurement (university funds) | ✅ Done |
 | 5 | SolidWorks prototype design | ✅ Done |
 | 6 | Mobile app development | ✅ Done |
-| 7 | Partial implementation (no battery) | 🔄 In Progress |
-| 8 | Dashboard simulation | 🔄 In Progress |
-| 9 | Plug-in hybrid research | 🔄 Ongoing |
-| 10 | Battery purchase | ⏳ Pending (budget) |
+| 7 | Partial implementation (no battery) | ✅ Done |
+| 8 | Dashboard simulation | ✅ Done |
+| 9 | Plug-in hybrid research | ✅ Done |
+| 10 | Battery purchase | ⏳ Budget limitation |
 | 11 | Final prototype demo | 📅 University Exhibition |
 
 ---
