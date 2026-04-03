@@ -39,7 +39,7 @@ Lab testing documentation including:
 - Display reading verification
 - Controller and motor bench test
 
-## 🔬 mobile_app/
+## 📱 mobile_app/
 
 Mobile app development images including:
 - DC power supply (BK Precision PVS60085MR)
