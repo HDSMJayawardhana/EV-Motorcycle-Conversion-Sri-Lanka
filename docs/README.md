@@ -7,7 +7,6 @@ EV Motorcycle Conversion research project.
 
 | File | Description | Status |
 |------|-------------|--------|
-| `Final_Report.pdf` | Complete ME420 research report (37 pages) | ✅ Available |
 | `Cost_Benefit_Analysis.pdf` | ICE vs EV monthly cost comparison | ✅ Available |
 | `Vehicle_Specifications.pdf` | Vehicle parameters and technical calculations | ✅ Available |
 | `Force_Calculations.pdf` | Tractive force and power analysis (handwritten) | ✅ Available |
